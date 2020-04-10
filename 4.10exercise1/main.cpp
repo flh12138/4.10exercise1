@@ -10,7 +10,6 @@ int main()
 	cv::Mat SobelMat1;
 	cv::Mat SobelMat2;
 	cv::Mat cannyMat;
-
 	Sobel(frame, SobelMat1, CV_16SC1, 1, 0, 3);
 	Sobel(frame, SobelMat2, CV_16SC1, 0, 1, 3);
 	Canny(SobelMat1, SobelMat2, cannyMat, 150, 450);
